@@ -18,7 +18,6 @@ Note: -r为逆序，-k5表示为按第五行的数据排序
       --sort=WORD             sort according to WORD:
                                 general-numeric -g, human-numeric -h, month -M,
                                 numeric -n, random -R, version -V
-
 ```
 
 * ##### 目录下文件按大小排序\(包括文件夹\)
@@ -33,9 +32,24 @@ du -sh * | sort -h -r
 
 ```
 hogan@hogan:~/Downloads$ du -sh * | grep [0-9]G
-3.9G	rom
-14G	Tools
+3.9G    rom
+14G    Tools
+```
 
+* ##### 执行前一条命令并替换部分参数
+
+```
+hogan@hogan:~/Documents$ ls -lrth *.py
+ls: cannot access *.py: No such file or directory
+hogan@hogan:~/Documents$ ^py^txt
+ls -lrth *.txt
+-rw-rw-r-- 1 hogan hogan 1.5K Dec 6 2017 tc_cp_cmd.txt
+```
+
+* ##### 快速查看ASCII码
+
+```
+man ascii
 ```
 
 
