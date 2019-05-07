@@ -54,11 +54,15 @@ man ascii
 
 * ##### SimpleHttpServer
 
+https://docs.python.org/2/library/simplehttpserver.html
+
+https://docs.python.org/3/library/http.server.html
+
 ```
-Python2
+* Python2
+python -m SimpleHTTPServer 8000
 
-Python3
-
+* Python3
 python3 -m http.server 8000
 ```
 
